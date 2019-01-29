@@ -325,20 +325,6 @@ client.on("message", message => {
 
 
 
-client.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('discord.gg')){
-        if(!message.channel.guild) return;
-        message.delete()
-    return message.reply(`** ممنوع نشر السيرفرات سوف يتم معاقبتك😠 ! **`)
-    }
-});
-
-
-
-
-
-
 
 
 
@@ -355,7 +341,7 @@ client.on("message", message => {
     return;
     }
             message.guild.members.forEach(m => {
-       if(!message.member.hasPermission('ADMINISTRATOR')) return;
+       if(!message.member.hasPermission('SEND_MESSAGES')) return;
                 m.send(args);
             });
             const AziRo = new Discord.RichEmbed()
