@@ -9,7 +9,7 @@ const moment = require('moment');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`RFL Admin`,"http://twitch.tv/S-F")
+client.user.setGame(`Pixel THE BEST`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
